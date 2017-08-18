@@ -13,8 +13,8 @@ public class Solution {
     public static void main(String[] args) throws Exception {
 
         ArrayList<Integer> main = new ArrayList<>();
-        ArrayList<Integer> duplet = new ArrayList<>();
         ArrayList<Integer> triplet = new ArrayList<>();
+        ArrayList<Integer> duplet = new ArrayList<>();
         ArrayList<Integer> trash = new ArrayList<>();
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -23,7 +23,7 @@ public class Solution {
             main.add(Integer.parseInt(reader.readLine()));
         }
 
-        int size = main.size();
+        //int size = main.size();
 
         for (int value: main)
         {
@@ -31,11 +31,19 @@ public class Solution {
             {
                 triplet.add(value);
             }
-           if (value % 2 == 0 )
+        }
+
+        for (int value: main)
+        {
+            if (value % 2 == 0)
             {
                 duplet.add(value);
             }
-            else if ((value % 3 != 0) && (value % 2 != 0))
+        }
+
+        for (int value: main)
+        {
+            if ((value % 3 != 0) && (value % 2 != 0))
             {
                 trash.add(value);
             }
