@@ -21,12 +21,13 @@ public class Solution {
 
     public static HashMap<String, Cat> addCatsToMap(String[] cats) {
 
+        HashMap<String, Cat> newmap = new HashMap<>();
         for (String value: cats)
         {
-          HashMap.put(value, new Cat(value));
+          newmap.put(value, new Cat(value));
         }
 
-        return HashMap;
+        return newmap;
         //напишите тут ваш код
 
     }
