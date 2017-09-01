@@ -9,7 +9,7 @@ import java.util.List;
 Время для 10 тысяч вставок
 */
 
-public class Solution {
+/*public class Solution {
     public static void main(String[] args) {
         System.out.println(getTimeMsOfInsert(new ArrayList()));
         System.out.println(getTimeMsOfInsert(new LinkedList()));
@@ -30,6 +30,29 @@ public class Solution {
     public static void insert10000(List list) {
         for (int i = 0; i < 10000; i++) {
             list.add(0, new Object());
+        }
+    }
+}
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        System.out.println(getTimeMsOfInsert(new ArrayList()));
+        System.out.println(getTimeMsOfInsert(new LinkedList()));
+    }
+
+    public static long getTimeMsOfInsert(List list) {
+        Date startTime = new Date();//напишите тут ваш код
+        set10000(list);
+        Date endTime = new Date();
+        return startTime.getTime() - endTime.getTime();
+        //напишите тут ваш код
+
+    }
+
+    public static void set10000(List list) {
+        for (int i = 0; i < 10000; i++) {
+            list.set(0, new Object());
         }
     }
 }
