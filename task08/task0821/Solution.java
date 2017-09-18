@@ -14,9 +14,25 @@ public class Solution {
     }
 
     public static Map<String, String> createPeopleList() {
+
+        HashMap<String, String> map = new HashMap<>();
+
+        map.put("Иванов", "Петр");
+
+        map.put("Иванов", "Петр");
+        map.put("Иванов", "Петр");
+        map.put("Иванов", "Петр");
+        map.put("Иванов", "Петр");
+        map.put("Петров", "Иван");
+        map.put("Сидоров", "Сидор");
+        map.put("Иванов", "Иван");
+        map.put("Иванов", "Петр");
+        map.put("Иванов", "Петр");
+
+
         //напишите тут ваш код
 
-        return null;
+        return map;
     }
 
     public static void printPeopleList(Map<String, String> map) {
