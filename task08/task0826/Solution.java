@@ -22,6 +22,13 @@ public class Solution {
         for (int i = 0; i < array.length; i++) {
             array[i] = Integer.parseInt(reader.readLine());
         }
+
+        /*array[0] = 4;
+        array[1] = 6;
+        array[2] = 3;
+        array[3] = 1;
+        array[4] = 2;*/
+
         sort(array);
 
         System.out.println(array[0]);
@@ -32,6 +39,24 @@ public class Solution {
     }
 
     public static void sort(int[] array) {
+
+        int size = array.length;
+        for (int i = size - 1; i > 0; i--)
+        {
+            for (int j = 0; j < i; j++)
+            {
+                if (array[j] < array[j + 1])
+                {
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
+            }
+        }
+
+    }
+
+    /*public static void sort(int[] array) {
 
         int size = array.length;
         int[] copy = new int[size];
@@ -55,5 +80,6 @@ public class Solution {
 
         System.arraycopy(copy, 0, array, 0, array.length);
 
-    }
+    }*/
+
 }
