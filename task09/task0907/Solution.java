@@ -6,9 +6,18 @@ package com.javarush.task.task09.task0907;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+
+
+        try {
+            //напишите тут ваш код
+
 
         int a = 42 / 0;
+        }
+        catch (ArithmeticException e)
+        {
+            System.out.println("This is ArithmeticException");
+        }
 
         //напишите тут ваш код
     }
