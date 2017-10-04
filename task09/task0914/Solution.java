@@ -7,8 +7,16 @@ package com.javarush.task.task09.task0914;
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        try
+        {
+            method1();
+        }
+        catch (Exception e)
+        {
+            System.out.println("Exception");
+        }
 
-        method1();
+
 
         //напишите тут ваш код
 

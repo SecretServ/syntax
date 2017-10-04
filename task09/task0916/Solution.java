@@ -14,9 +14,26 @@ public class Solution {
     }
 
     public static void processExceptions(Solution obj) {
-        obj.method1();
-        obj.method2();
-        obj.method3();
+        try {
+            obj.method1();
+            obj.method2();
+            obj.method3();
+        }
+
+        catch (RemoteException c)
+        {
+            System.out.println("RemoteException");
+        }
+
+        catch (IOException a)
+        {
+            System.out.println("IOException");
+        }
+        catch (NoSuchFieldException b)
+        {
+            System.out.println("NoSuchFieldException");
+        }
+
     }
 
     public void method1() throws IOException {

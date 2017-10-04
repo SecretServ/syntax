@@ -12,11 +12,37 @@ public class Solution {
     public static StatelessBean BEAN = new StatelessBean();
 
     public static void main(String[] args) {
-        processExceptions();
+        try {
+            processExceptions();
+        }
+        catch (Exception e)
+        {
+            BEAN.log(e);
+        }
     }
 
-    public static void processExceptions() {
-        BEAN.methodThrowExceptions();
+    public static void processExceptions() throws FileSystemException {
+        try {
+            BEAN.methodThrowExceptions();
+        }
+        catch (FileSystemException e)
+        {
+
+            BEAN.log(e);
+            throw e;
+        }
+        catch (CharConversionException f)
+        {
+            BEAN.log(f);
+        }
+        catch (IOException g)
+        {
+            BEAN.log(g);
+        }
+
+        class FileSystemException {
+
+        }
     }
 
     public static class StatelessBean {

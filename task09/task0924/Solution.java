@@ -14,6 +14,12 @@ public class Solution {
     public static Wolf wolf = new Wolf();
 
     public static void main(String[] args) {
+        wolf.ate.add(hood);
+        wolf.ate.add(grandmother);
+
+        woodman.killed.add(wolf);
+
+
         // напишите тут ваш код
     }
 
