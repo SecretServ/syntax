@@ -8,9 +8,17 @@ public class Solution {
     public static void main(String[] args) {
         int a = 15;
         int b = 4;
-        float c = a / b;
+        float c = (float) a / b;
         double d = a * 1e-3 + c;
 
         System.out.println(d);
+
+        /*System.out.println();
+
+        System.out.println("a " + a);
+        System.out.println("b " + b);
+        System.out.println("c " + c);
+        System.out.println("d " + d);*/
+        //System.out.println("f " + f);
     }
 }
