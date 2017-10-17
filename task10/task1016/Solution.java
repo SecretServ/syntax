@@ -28,7 +28,23 @@ public class Solution {
 
     public static Map<String, Integer> countWords(ArrayList<String> list) {
         HashMap<String, Integer> result = new HashMap<String, Integer>();
+        //String str = list.get(0);
 
+        for (int i = 0; i < list.size(); i++)
+        {
+            int count = 0;
+            for (int j = 0; j < list.size(); j++)
+            {
+                if (list.get(i).equals(list.get(j)))
+                {
+                    count++;
+                    result.put(list.get(i), count);
+                }
+
+            }
+
+
+        }
         //напишите тут ваш код
 
 
