@@ -29,8 +29,10 @@ public class Solution {
         }
 
 
+        for (int i = 0; i < 10; i++)
+        {
 
-
+        }
         // напишите тут ваш код
     }
 
